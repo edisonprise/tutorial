@@ -1,5 +1,17 @@
+import oop.Gato;
+import oop.Veterinario;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+    Gato miGato = new Gato(new Veterinario(), 4, 8);
+
+    boolean estaSano = miGato.esUnGatoSaludable();
+
+    if(estaSano) {
+        System.out.println("Mi gato esta sano :)");
+    } else {
+        System.out.println("Mi gato debe bajar de peso.");
+    }
     }
 }
